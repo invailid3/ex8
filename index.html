@@ -10,15 +10,47 @@
 <body>
     <div id="MyModal" class="modal">
         <div class="modal-content">
-            <span id="close">&times;</span> 
+            <div class="modal-closer">
+                <span id="close">&times;</span> 
+            </div>
             <div class="form">
-                <p> aaaaaaaaaaaa</p>
+                <form id="feedback-form" class="ajaxForm">
+                    <div>
+                        <h1 id="form-header">Form</h1>
+                    </div>
+                    <div id="form-name" class="input-outter">
+                        <label for="user-name">Name:</label>
+                        <input type="text" name="user-name" id="user-name" class="form-elements" required>
+                    </div>
+                    <div id="form-email" class="input-outter">
+                        <label for="user-email">Email:</label>
+                        <input type="email" name="user-email" id="user-email" class="form-elements">
+                    </div>
+                    <div id="form-phone" class="input-outter">
+                        <label for="user-phone">Phone:</label>
+                        <input type="tel" name="user-phone" id="user-phone" class="form-elements">
+                    </div>
+                    <div id="form-organisation" class="input-outter">
+                        <label for="user-organisation">Organisation:</label>
+                        <input type="text" name="user-organisation" id="user-organisation" class="form-elements">
+                    </div>
+                    <div id="form-message" class="input-outter">
+                        <label for="user-message">Massage:</label>
+                        <textarea name="user-message" id="user-message" rows="5" class="form-elements" required></textarea>
+                    </div>
+                    <div id="form-acception">
+                        <input type="checkbox" name="acception" id="user-acception" class="form-elements" required >
+                        <label for="user-acception">I agree with the privacy politics</label>
+                    </div>
+                    <div id="form-submit-button">
+                        <button type="button" id="submit-button">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
     <div class="content">
         <button id="pop-btn">Start</button>      
-    </div>
-    
+    </div>   
 </body>
 </html>
